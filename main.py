@@ -275,6 +275,7 @@ class LoginHandler(BlogHandler):
 
         # get the user from the database
         user = self.get_user_by_name(submitted_username)
+        blah = blah
 
         if not user:
             self.render_login_form(error="Invalid username")
